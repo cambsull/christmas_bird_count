@@ -27,18 +27,25 @@ GitHub is used to host versions.
 User Story: As a User, I want to be able to navigate the site on a mobile device.
 
 1. Create hamburger dropdown menu for mobile navigation header.
+
     a. Will function as as button.
+
     b. Will utilize HTML, CSS, and JavaScript.
 
 2. Design site with breakpoints for common screen sizes.
+
     a. Will start development with a mobile-first design.
+
     b. Will use media queries.
+
     c. Will test common screen sizes and screen orientations using desktop and mobile devices.
 
 User Story: As a User, I want to be able to send my contact information and a short message to the Organization.
 
 1. Create Contacts page with functional form.
+
     a. Will utilize HTML, CSS, JavaScript, and Google Forms API.
+
     b. Will test using multiple accounts and on multiple devices to ensure functionality.
 
 ## Engineering Stories
@@ -46,22 +53,29 @@ User Story: As a User, I want to be able to send my contact information and a sh
 Engineer story: As an Engineer, I want to implement Don't Repeat Yourself patterns.
 
 1. Utilize functions and object-oriented programming.
+
     a. Will follow best-practices for OOP. Use most effective methods for data types to avoid repetitive code.
 
 Engineer story: As an Engineer, I want to keep the scope of the site clearly defined and concise to the client's needs.
 
 1. Keep it simple.
+
     a. Will use the technologies and design principles necessary to effectively create the site based on the client's specifications and needs.
+
     b. Will not succumb to "feature creep" or implement unnecessary features or overly complex engineering strategies.
 
 Engineer story: As an Engineer, I want to follow best practices for version control.
 
 1. Use a version control technology.
+
     a. Git and GitHub will be used for version control.
 
 2. Follow best practices for version control.
+
     a. Git repository will contain at least one development branch and a main branch.
+
     b. Additional engineers, if applicable, will use their own development branch.
+    
     c. Best practices will be followed for pull requests.
 
 ## Design Scope
