@@ -67,7 +67,7 @@ body {
         position: relative;
         display: block;
         width: 35px;
-        cursor: pointer;
+        cursor: default;
         appearance: none;
         background: none;
         background-color: var(--background-gray);
@@ -75,7 +75,13 @@ body {
         border: none;
     }
 
-    .hamburger .bar, .hamburger:after, .hamburger:before {
+    .hamburger:active {
+        outline: none;
+    }
+
+    .hamburger .bar,
+    .hamburger:after,
+    .hamburger:before {
         content: '';
         display: block;
         width: 100%;
@@ -137,7 +143,7 @@ body {
 
 /* TABLET */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-    
+
     .logoDesktop {
         display: none;
     }
@@ -156,7 +162,7 @@ body {
 
 /* MEDIUM LAPTOP/DESKTOP */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-    
+
     .logoMobile {
         display: none;
     }

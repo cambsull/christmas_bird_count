@@ -1,7 +1,7 @@
 //OnLoad functions
 window.onload = () => {
     //Handle scroll events
-    window.addEventListener('scroll', function (e) {
+    window.addEventListener('scroll', function () {
         window.scrollY > 100 ?
             this.document.querySelector("header").classList.add('is-scrolling') :
             this.document.querySelector("header").classList.remove('is-scrolling');
