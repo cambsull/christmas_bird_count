@@ -32,10 +32,9 @@ body {
     background-color: var(--background-beige)
 }
 
-
 /* MOBILE */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (orientation: portrait) {
 
     .container {
         display: flex;
@@ -105,7 +104,7 @@ body {
 
     .mobile-nav {
         position: fixed;
-        top: 7vh;
+        margin-top: 2vh;
         left: 100%;
         width: 100%;
         height: 100vh;
@@ -137,49 +136,729 @@ body {
 
 }
 
-@media only screen and (max-width: 600px) and (orientation: portrait) {}
+@media only screen and (max-width: 600px) and (orientation: landscape) {
 
-@media only screen and (max-width: 600px) and (orientation: landscape) {}
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-/* TABLET */
-@media only screen and (min-width: 601px) and (max-width: 768px) {
+    header {
+        background-color: darkgray;
+        width: 100%;
+    }
 
     .logoDesktop {
         display: none;
     }
 
+    .logoMobile {
+        margin: auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hamburger {
+        position: relative;
+        display: block;
+        width: 35px;
+        cursor: default;
+        appearance: none;
+        background: none;
+        background-color: var(--background-gray);
+        outline: none;
+        border: none;
+    }
+
+    .hamburger:active {
+        outline: none;
+    }
+
+    .hamburger .bar,
+    .hamburger:after,
+    .hamburger:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #FFF;
+        margin: 6px 0px;
+        transition: 200ms;
+    }
+
+    .hamburger.is-active:before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .hamburger.is-active:after {
+        transform: rotate(45deg) translate(-9px, -8px)
+    }
+
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        margin-top: 2vh;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: 98;
+        background-color: var(--background-gray);
+        padding-top: 20px;
+        transition: left 200ms, background-color 200ms;
+    }
+
+    .mobile-nav.is-active {
+        left: 0;
+    }
+
+    .mobile-nav a {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+        margin: 16px auto;
+        padding: 6px 6px;
+        background-color: var(--tertiary-sky-blue);
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobile-nav a:active {
+        background-color: hsla(210, 68%, 65%, 0.8);
+    }
+
 }
 
-@media only screen and (min-width: 601px) and (max-width: 768px) and (orientation: portrait) {}
+/* TABLET */
+@media only screen and (min-width: 601px) and (max-width: 768px) and (orientation: portrait) {
 
-@media only screen and (min-width: 601px) and (max-width: 768px) and (orientation: landscape) {}
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {}
+    header {
+        background-color: darkgray;
+        width: 100%;
+    }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {}
+    .logoDesktop {
+        display: none;
+    }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: landscape) {}
+    .logoMobile {
+        margin: auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hamburger {
+        position: relative;
+        display: block;
+        width: 35px;
+        cursor: default;
+        appearance: none;
+        background: none;
+        background-color: var(--background-gray);
+        outline: none;
+        border: none;
+    }
+
+    .hamburger:active {
+        outline: none;
+    }
+
+    .hamburger .bar,
+    .hamburger:after,
+    .hamburger:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #FFF;
+        margin: 6px 0px;
+        transition: 200ms;
+    }
+
+    .hamburger.is-active:before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .hamburger.is-active:after {
+        transform: rotate(45deg) translate(-9px, -8px)
+    }
+
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        margin-top: 2vh;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 98;
+        background-color: var(--background-gray);
+        padding-top: 120px;
+        transition: left 200ms, background-color 200ms;
+    }
+
+    .mobile-nav.is-active {
+        left: 0;
+    }
+
+    .mobile-nav a {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+        margin: 0 auto 16px;
+        padding: 12px 16px;
+        background-color: var(--tertiary-sky-blue);
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobile-nav a:active {
+        background-color: hsla(210, 68%, 65%, 0.8);
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) and (orientation: landscape) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header {
+        background-color: darkgray;
+        width: 100%;
+    }
+
+    .logoDesktop {
+        display: none;
+    }
+
+    .logoMobile {
+        margin: auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hamburger {
+        position: relative;
+        display: block;
+        width: 35px;
+        cursor: default;
+        appearance: none;
+        background: none;
+        background-color: var(--background-gray);
+        outline: none;
+        border: none;
+    }
+
+    .hamburger:active {
+        outline: none;
+    }
+
+    .hamburger .bar,
+    .hamburger:after,
+    .hamburger:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #FFF;
+        margin: 6px 0px;
+        transition: 200ms;
+    }
+
+    .hamburger.is-active:before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .hamburger.is-active:after {
+        transform: rotate(45deg) translate(-9px, -8px)
+    }
+
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        margin-top: 2vh;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: 98;
+        background-color: var(--background-gray);
+        padding-top: 20px;
+        transition: left 200ms, background-color 200ms;
+    }
+
+    .mobile-nav.is-active {
+        left: 0;
+    }
+
+    .mobile-nav a {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+        margin: 16px auto;
+        padding: 6px 6px;
+        background-color: var(--tertiary-sky-blue);
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobile-nav a:active {
+        background-color: hsla(210, 68%, 65%, 0.8);
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: portrait) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header {
+        background-color: darkgray;
+        width: 100%;
+    }
+
+    .logoDesktop {
+        display: none;
+    }
+
+    .logoMobile {
+        margin: auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hamburger {
+        position: relative;
+        display: block;
+        width: 35px;
+        cursor: default;
+        appearance: none;
+        background: none;
+        background-color: var(--background-gray);
+        outline: none;
+        border: none;
+    }
+
+    .hamburger:active {
+        outline: none;
+    }
+
+    .hamburger .bar,
+    .hamburger:after,
+    .hamburger:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #FFF;
+        margin: 6px 0px;
+        transition: 200ms;
+    }
+
+    .hamburger.is-active:before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .hamburger.is-active:after {
+        transform: rotate(45deg) translate(-9px, -8px)
+    }
+
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        margin-top: 2vh;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 98;
+        background-color: var(--background-gray);
+        padding-top: 120px;
+        transition: left 200ms, background-color 200ms;
+    }
+
+    .mobile-nav.is-active {
+        left: 0;
+    }
+
+    .mobile-nav a {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+        margin: 0 auto 16px;
+        padding: 12px 16px;
+        background-color: var(--tertiary-sky-blue);
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobile-nav a:active {
+        background-color: hsla(210, 68%, 65%, 0.8);
+    }
+
+
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) and (orientation: landscape) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header {
+        background-color: darkgray;
+        width: 100%;
+    }
+
+    .logoDesktop {
+        display: none;
+    }
+
+    .logoMobile {
+        margin: auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hamburger {
+        position: relative;
+        display: block;
+        width: 35px;
+        cursor: default;
+        appearance: none;
+        background: none;
+        background-color: var(--background-gray);
+        outline: none;
+        border: none;
+    }
+
+    .hamburger:active {
+        outline: none;
+    }
+
+    .hamburger .bar,
+    .hamburger:after,
+    .hamburger:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #FFF;
+        margin: 6px 0px;
+        transition: 200ms;
+    }
+
+    .hamburger.is-active:before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .hamburger.is-active:after {
+        transform: rotate(45deg) translate(-9px, -8px)
+    }
+
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        margin-top: 2vh;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: 98;
+        background-color: var(--background-gray);
+        padding-top: 20px;
+        transition: left 200ms, background-color 200ms;
+    }
+
+    .mobile-nav.is-active {
+        left: 0;
+    }
+
+    .mobile-nav a {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+        margin: 16px auto;
+        padding: 6px 6px;
+        background-color: var(--tertiary-sky-blue);
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobile-nav a:active {
+        background-color: hsla(210, 68%, 65%, 0.8);
+    }
+}
 
 /* MEDIUM LAPTOP/DESKTOP */
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
+@media only screen and (min-width: 993px) and (max-width: 1200) and (orientation: portrait) {
 
     .logoMobile {
         display: none;
     }
 
-}
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-@media only screen and (min-width: 993px) and (max-width: 1200px) and (orientation: portrait) {}
+    header {
+        background-color: darkgray;
+        width: 100%;
+    }
 
-@media only screen and (min-width: 993px) and (max-width: 1200px) and (orientation: landscape) {}
-
-/* LARGE LAPTOP/DESKTOP */
-@media only screen and (min-width: 1201px) {
-    .logoMobile {
+    .logoDesktop {
         display: none;
     }
+
+    .logoMobile {
+        margin: auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hamburger {
+        position: relative;
+        display: block;
+        width: 35px;
+        cursor: default;
+        appearance: none;
+        background: none;
+        background-color: var(--background-gray);
+        outline: none;
+        border: none;
+    }
+
+    .hamburger:active {
+        outline: none;
+    }
+
+    .hamburger .bar,
+    .hamburger:after,
+    .hamburger:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #FFF;
+        margin: 6px 0px;
+        transition: 200ms;
+    }
+
+    .hamburger.is-active:before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .hamburger.is-active:after {
+        transform: rotate(45deg) translate(-9px, -8px)
+    }
+
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        margin-top: 2vh;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 98;
+        background-color: var(--background-gray);
+        padding-top: 120px;
+        transition: left 200ms, background-color 200ms;
+    }
+
+    .mobile-nav.is-active {
+        left: 0;
+    }
+
+    .mobile-nav a {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+        margin: 0 auto 16px;
+        padding: 12px 16px;
+        background-color: var(--tertiary-sky-blue);
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobile-nav a:active {
+        background-color: hsla(210, 68%, 65%, 0.8);
+    }
+
+
+
 }
 
-@media only screen and (min-width: 1201px) and (orientation: portrait) {}
+@media only screen and (min-width: 993px) and (max-width: 1200px) and (orientation: landscape) {
 
-@media only screen and (min-width: 1201px) and (orientation: landscape) {}
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header {
+        background-color: darkgray;
+        width: 100%;
+    }
+
+    .logoDesktop {
+        display: none;
+    }
+
+    .logoMobile {
+        margin: auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hamburger {
+        position: relative;
+        display: block;
+        width: 35px;
+        cursor: default;
+        appearance: none;
+        background: none;
+        background-color: var(--background-gray);
+        outline: none;
+        border: none;
+    }
+
+    .hamburger:active {
+        outline: none;
+    }
+
+    .hamburger .bar,
+    .hamburger:after,
+    .hamburger:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #FFF;
+        margin: 6px 0px;
+        transition: 200ms;
+    }
+
+    .hamburger.is-active:before {
+        transform: rotate(-45deg) translate(-8px, 6px);
+    }
+
+    .hamburger.is-active:after {
+        transform: rotate(45deg) translate(-9px, -8px)
+    }
+
+    .hamburger.is-active .bar {
+        opacity: 0;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        margin-top: 2vh;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        z-index: 98;
+        background-color: var(--background-gray);
+        padding-top: 20px;
+        transition: left 200ms, background-color 200ms;
+    }
+
+    .mobile-nav.is-active {
+        left: 0;
+    }
+
+    .mobile-nav a {
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+        margin: 16px auto;
+        padding: 6px 6px;
+        background-color: var(--tertiary-sky-blue);
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobile-nav a:active {
+        background-color: hsla(210, 68%, 65%, 0.8);
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .logoMobile {
+        display: none;
+    }    
+}
