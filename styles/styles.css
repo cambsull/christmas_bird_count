@@ -48,6 +48,19 @@ body {
         width: 100%;
     }
 
+    iframe {
+        width: 100vw;
+        height: 110vh;
+        margin-top: 1.5vh;
+    }
+
+    .contactForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
     .logoDesktop {
         display: none;
     }
@@ -149,6 +162,20 @@ body {
         background-color: darkgray;
         width: 100%;
     }
+
+    iframe {
+        width: 100vw;
+        height: 110vh;
+        margin-top: 1.5vh;
+    }
+
+    .contactForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
 
     .logoDesktop {
         display: none;
@@ -253,6 +280,19 @@ body {
         width: 100%;
     }
 
+    iframe {
+        width: 100vw;
+        height: 110vh;
+        margin-top: 1.5vh;
+    }
+
+    .contactForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
     .logoDesktop {
         display: none;
     }
@@ -354,6 +394,19 @@ body {
         width: 100%;
     }
 
+    iframe {
+        width: 100vw;
+        height: 110vh;
+        margin-top: 1.5vh;
+    }
+
+    .contactForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
     .logoDesktop {
         display: none;
     }
@@ -453,6 +506,19 @@ body {
     header {
         background-color: darkgray;
         width: 100%;
+    }
+
+    iframe {
+        width: 100vw;
+        height: 110vh;
+        margin-top: 1.5vh;
+    }
+
+    .contactForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .logoDesktop {
@@ -557,6 +623,19 @@ body {
     header {
         background-color: darkgray;
         width: 100%;
+    }
+
+    iframe {
+        width: 100vw;
+        height: 110vh;
+        margin-top: 1.5vh;
+    }
+
+    .contactForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .logoDesktop {
@@ -665,6 +744,19 @@ body {
         width: 100%;
     }
 
+    iframe {
+        width: 100vw;
+        height: 110vh;
+        margin-top: 1.5vh;
+    }
+
+    .contactForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
     .logoDesktop {
         display: none;
     }
@@ -767,6 +859,19 @@ body {
     header {
         background-color: darkgray;
         width: 100%;
+    }
+
+    iframe {
+        width: 100vw;
+        height: 110vh;
+        margin-top: 1.5vh;
+    }
+
+    .contactForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .logoDesktop {
