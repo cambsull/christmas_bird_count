@@ -23,7 +23,7 @@ body {
 
 a,
 .la-ball-triangle-path {
-    color: #c1a245;
+    color: #333ed4;
 }
 
 a:hover,
@@ -141,13 +141,28 @@ a:hover,
         background: url("../images/banner-images/banner-image-1.jpg") no-repeat center top;
         background-size: cover;
     }
+
+    #banner_about {
+        background: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.5)), url("../images/bird-images/pexels-jack-bulmer-15101948.jpg") no-repeat center top;
+        background-size: cover;
+    }
+    
+    #banner_get_involved {
+        background: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.5)), url("../images/bird-images/pexels-rio-guruh-imawan-1486538.jpg") no-repeat center top;
+        background-size: cover;
+    }
+
+    #banner_contact {
+        background: linear-gradient(rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.5)), url("../images/bird-images/pexels-brett-sayles-1312314_1.jpg") no-repeat center top;
+        background-size: cover;
+    }
 }
+
 
 @media only screen and (min-width: 1200px) {
     #banner {
         background: url("../images/banner-images/banner-image-2.jpg") no-repeat center top;
-        background-size: 70%;
-        border-radius: 10px
+        background-size: 78%;
     }
 }
 
@@ -167,7 +182,7 @@ body {
 
 #banner h1 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 30px;
+    font-size: 42px;
     line-height: 40px;
     font-weight: 800;
     color: #222
@@ -175,7 +190,7 @@ body {
 
 #banner h2 {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 300;
     color: #111
 }
@@ -184,7 +199,7 @@ body {
 
     #banner h1 {
         font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-        font-size: 30px;
+        font-size: 42px;
         line-height: 40px;
         font-weight: 800;
         color: #111
@@ -192,7 +207,7 @@ body {
 
     #banner h2 {
         font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-        font-size: 18px;
+        font-size: 30px;
         font-weight: 300;
         color: #DDD
     }
@@ -208,11 +223,13 @@ body {
     color: #111;
 }
 
+@media only screen and (min-width: 1200px) {
 .section-subtitle {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 300;
-    color: #111
+    color: #000
+}
 }
 
 /* Testimonial */
@@ -288,7 +305,7 @@ input[type="submit"] {
     font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 14px;
     font-weight: bold;
-    color: #111;
+    color: #FFF;
 }
 
 
@@ -296,7 +313,7 @@ input[type="submit"] {
 
 .button,
 input[type="submit"] {
-    border-color: #111;
+    border-color: #FFF;
 }
 
 
@@ -311,21 +328,35 @@ input[type="submit"]:hover {
 
 /* ----------Banner Buttons---------- */
 
+@media only screen and (min-width: 1200px){
 
-/* Button Text */
+    #banner .button {
+        font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+        font-size: 22px;
+        color: #FFF;
+    }
 
-#banner .button {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
-    font-size: 16px;
-    color: #111;
+    #banner .button {
+        border-color: #FFF;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    #banner .button {
+        font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+        font-size: 22px;
+        color: #111;
+    }
+
+    #banner .button {
+        border-color: #111;
+    }
+
 }
 
 
-/* Button Color */
-
-#banner .button {
-    border-color: #111;
-}
 
 
 /* Button Hover Color */

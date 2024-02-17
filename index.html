@@ -18,8 +18,8 @@
     <!-- Main CSS Files -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Namari Color CSS -->
-    <link rel="stylesheet" href="css/namari-color.css">
+    <!-- Color CSS -->
+    <link rel="stylesheet" href="css/color.css">
 
     <!--Icon Fonts - Font Awesome Icons-->
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -52,12 +52,10 @@
     </div>
 
     <div id="wrapper">
-
         <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
             <div id="header" class="nav-collapse">
                 <div class="row clearfix">
                     <div class="col-1">
-
                         <!--Logo-->
                         <div id="logo">
                             <!--Logo that is shown on the banner-->
@@ -67,12 +65,8 @@
                             <!--The Logo that is shown on the sticky Navigation Bar-->
                             <img src="images/logo-2.png" id="navigation-logo" alt="LCV Christmas Bird Count Logo" />
                             <!--End of Navigation Logo-->
-
                         </div>
                         <!--End of Logo-->
-
-
-
                         <!--Main Navigation-->
                         <nav id="nav-main">
                             <ul>
@@ -91,26 +85,24 @@
                             </ul>
                         </nav>
                         <!--End of Main Navigation-->
-
                         <div id="nav-trigger"><span></span></div>
                         <nav id="nav-mobile"></nav>
-
                     </div>
                 </div>
             </div><!--End of Header-->
 
             <!--Banner Content-->
             <div id="banner-content" class="row clearfix">
-
-                <div class="col-38">
-
+                <div class="col-2">
                     <div class="section-heading">
                         <h1>Lewiston-Clarkston Annual Christmas Bird Count</h1>
-                        <h2>This is a site about birds! Wow! Look at them go!</h2>
                     </div>
-
+                    <a href="https://www.audubon.org/conservation/science/christmas-bird-count" class="button">GET
+                        INVOLVED TODAY</a>
+                </div>
+                    
                     <!--Call to Action-->
-                    <a href="https://www.audubon.org/conservation/science/christmas-bird-count" class="button">GET INVOLVED TODAY</a>
+                  
                     <!--End Call to Action-->
 
                 </div>
@@ -123,10 +115,11 @@
 
             <!--Introduction-->
             <section id="about" class="introduction scrollto">
-
-                <div class="row clearfix">
-
-                    <div class="col-1">
+                <div id="banner_about" class="row clearfix">
+                    <div class="col-2 mobilehide">
+                        <img src="images\bird-images\pexels-jack-bulmer-15101948.jpg" alt="Bird Image"/>
+                    </div>
+                    <div class="col-2 banner">
                         <div class="section-heading">
                             <h2 class="section-title">About Us</h2>
                             <p class="section-subtitle">Welcome to the LC Valley branch of the Audubon Christmas Count!
@@ -142,41 +135,30 @@
                             <p class="section-subtitle">Discover the vast array of bird species that call the LC Valley
                                 home, as we give wings to our passion for birding. </p>
                         </div>
-
                     </div>
-
-
                 </div>
-
-
             </section>
 
-
-
             <!--Gallery-->
-            <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
+            <aside id="gallery" class="row text-center scrollto clearfix mobilehide" data-featherlight-gallery
                 data-featherlight-filter="a">
 
-                <a href="images\bird-images\pexels-adi-k-16523557.jpg" data-featherlight="image"
+                <a href="images\bird-images\pexels-radovan-zierik-3912764.jpg" data-featherlight="image"
                     class="col-3 wow fadeIn" data-wow-delay="0.1s"><img
-                        src="images\bird-images\pexels-adi-k-16523557.jpg" alt="Landing Page" /></a>
+                        src="images\bird-images\pexels-radovan-zierik-3912764.jpg" alt="Bird Image" /></a>
                 <a href="images\bird-images\pexels-brett-sayles-1312314_1.jpg" data-featherlight="image"
                     class="col-3 wow fadeIn" data-wow-delay="0.3s"><img
-                        src="images\bird-images\pexels-brett-sayles-1312314_1.jpg" alt="Landing Page" /></a>
+                        src="images\bird-images\pexels-brett-sayles-1312314_1.jpg" alt="Bird Image" /></a>
                 <a href="images\bird-images\pexels-jack-bulmer-10325566.jpg" data-featherlight="image"
                     class="col-3 wow fadeIn" data-wow-delay="0.5s"><img
-                        src="images\bird-images\pexels-jack-bulmer-10325566.jpg" alt="Landing Page" /></a>
-
-
+                        src="images\bird-images\pexels-jack-bulmer-10325566.jpg" alt="Bird Image" /></a>
             </aside>
             <!--End of Gallery-->
 
 
             <section id="getinvolved" class="introduction scrollto">
-
-                <div class="row clearfix">
-
-                    <div class="col-1">
+                <div id="banner_get_involved" class="row clearfix">
+                    <div class="col-2">
                         <div class="section-heading">
                             <h2 class="section-title">Get Involved</h2>
                             <p class="section-subtitle">
@@ -190,17 +172,21 @@
                             </p>
                         </div>
                     </div>
+                    <div class="col-2 mobilehide">
+                        <img src="images/bird-images/pexels-pixabay-59996.jpg" alt="Bird Image" /></a>
+                    </div>
                 </div>
             </section>
-
             <section id="contact" class="introduction scrollto">
-                <div class="row clearfix">
+                <div id="banner_contact" class="row clearfix">
                     <div class="col-1">
                         <div class="section-heading">
                             <h2 class="section-title">Contact Us</h2>
                         </div>
-                        <iframe
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSd0XC1m2mqhg5ZK9fTqfcHGtHMBhGRLPTb1SdDtSmSm5Mja3w/viewform?embedded=true">Loading...</iframe>
+                        <div class="row clearfix">
+                            <iframe
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSd0XC1m2mqhg5ZK9fTqfcHGtHMBhGRLPTb1SdDtSmSm5Mja3w/viewform?embedded=true">Loading...</iframe>
+                        </div>
                     </div>
             </section>
         </main>
@@ -233,8 +219,5 @@
     <script src="js/images-loaded.min.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script src="js/site.js"></script>
-
-
 </body>
-
 </html>
