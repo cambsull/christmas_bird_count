@@ -136,7 +136,7 @@ a:hover,
 
 /* Banner Background and Text Colors */
 
-@media only screen and (max-width: 600px) and (orientation: portrait) {
+@media only screen and (max-width: 767px) {
     #banner {
         background: url("../images/banner-images/banner-image-1.jpg") no-repeat center top;
         background-size: cover;
@@ -158,8 +158,15 @@ a:hover,
     }
 }
 
+@media only screen and (min-width: 768px) {
+    #banner {
+        background: url("../images/banner-images/banner-image-2.jpg") no-repeat center top;
+        background-size: cover;
+    }
+}
 
-@media only screen and (min-width: 1200px) {
+
+@media only screen and (min-width: 1580px) {
     #banner {
         background: url("../images/banner-images/banner-image-2.jpg") no-repeat center top;
         background-size: 78%;
@@ -185,7 +192,7 @@ body {
     font-size: 42px;
     line-height: 40px;
     font-weight: 800;
-    color: #222
+    color: #111
 }
 
 #banner h2 {
@@ -342,7 +349,7 @@ input[type="submit"]:hover {
     
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
 
     #banner .button {
         font-family: 'Open Sans', sans-serif, Arial, Helvetica;
