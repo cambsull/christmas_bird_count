@@ -74,22 +74,8 @@ The site will fulfill the requests of the client:
 
 * Be responsive to mobile devices and various screen sizes.
 
-* Contain a Home page, an About page, and a Contact page.
+* Contain a Home section, an About section, and a Contact section.
 
 * Feature images of birds local to the Lewiston area.
 
 * Have a functional contact form.
-
-## Functions
-
-### Mobile
-
-// Specifics about mobile functions will go here.
-
-### Tablet
-
-// Specifics about tablet functions will go here.
-
-### Desktop
-
-// Specifics about desktop functions will go here.
