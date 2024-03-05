@@ -2,7 +2,7 @@
 
 ## General
 
-This is a website designed for a client in Lewiston, Idaho. Design began on February 8, 2024. The purpose of this site is to provide local residents around Lewiston with a connection to their local Audubon chapter, and to highlight the Christmas Bird Count program run by the Audubon Society.
+This is a website designed for a client in Lewiston, Idaho. The purpose of this site is to provide local residents around Lewiston with a connection to their local Audubon chapter, and to highlight the Christmas Bird Count program run by the Audubon Society.
 
 ## Personnel
 
